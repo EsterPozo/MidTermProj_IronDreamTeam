@@ -1,0 +1,14 @@
+const url = "https://swapi.dev/api/films";
+
+//OPCIÓN 2 (ASYNC/AWAIT)
+async function getData() {
+  try {
+    let result = await fetch(url2);
+    let data = await result.json();
+    console.log(data[0]);
+  } catch (error) {
+    console.log("error!");
+  }
+}
+
+getData();
