@@ -5,6 +5,7 @@ const url2 =
 //Variables de HTML
 const projSection = document.querySelector('#p-proj-section');
 const projSection2 = document.querySelector('#p-other-proj-section');
+const projCtaSec = document.querySelector('#p-cta-section');
 
 //OPCIÓN 1 (THEN)
 
@@ -32,8 +33,8 @@ fetch(url2)
     parag.innerHTML = data[4].content;
 
     //SECTION2
-    const h2 = projSection2.querySelector('h2');
-    h2.innerHTML = "Other Projects"
+    const h2Other = projSection2.querySelector('h2');
+    h2Other.innerHTML = "Other Projects"
 
     const card1 =projSection2.querySelector('#card1');
     const imagecard1 = document.createElement('img');
@@ -59,6 +60,21 @@ fetch(url2)
         card.appendChild(pjctsImg);
         
     }) */
+
+    //CTA SECTION
+const h2Cta = document.createElement('h2');
+const ctaDiv = projCtaSec.querySelector('#cta-div');
+ctaDiv.appendChild(h2Cta);
+h2Cta.innerHTML="Do you have any questions?"
+
+const pCta = document.createElement('p');
+ctaDiv.appendChild(pCta);
+pCta.innerHTML = "Let us help you!"
+
+//AÑADIR EMAIL + SUBSCRIBE
+
+//FOOTER
+
 })
 })
 .catch((err) => console.log("error!")); 
