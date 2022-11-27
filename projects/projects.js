@@ -38,7 +38,8 @@ fetch(url2)
 
     const card1 =projSection2.querySelector('#card1');
     const imagecard1 = document.createElement('img');
-    imagecard1.src = "https://github.com/ironhack-jc/mid-term-api/blob/main/3.jpg?raw=true";
+    imagecard1.src = data[0].image;
+        //eliminar después de CSS
     imagecard1.style.width = "120px"
     card1.appendChild(imagecard1);
     const h4 = document.createElement('h4');
@@ -52,14 +53,23 @@ fetch(url2)
     acard1.innerHTML = "Learn More"
     acard1.href = "#"
 
-    /*const card = projSection2.querySelectorAll('.p-card');
+    const cards = projSection2.querySelectorAll('.p-card');
     
-     card.forEach( (element) => {
-        const pjctsImg = document.createElement("img");
-        pjctsImg.src = data[0].image
-        card.appendChild(pjctsImg);
+     cards.forEach( (card) => {
+        const imagecard = document.createElement("img");
+        //crear un numero random
+        const random = Math.floor(Math.random()*data.length);
+        console.log(random)
+        data.forEach((dataElem) => {
+            if (dataElem.description !== "Lorem ipsum") {
+                imagecard.src = data[random].image
+                card.appendChild(imagecard);
+                imagecard.style.width = "200px"
+            }
+        })
         
-    }) */
+        
+    }) 
 
     //CTA SECTION
 const h2Cta = document.createElement('h2');
@@ -80,5 +90,5 @@ pCta.innerHTML = "Let us help you!"
 .catch((err) => console.log("error!")); 
 };
 
-//Como no consigo coger info de la API..
+
 
