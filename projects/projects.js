@@ -30,6 +30,7 @@ window.onload = function () {
 
         //SECTION 1
         //Title area
+        
         const h1 = projSection.querySelector("h1");
         h1.innerHTML = data[indexp].name;
         const p1 = projSection.querySelector("#p-under-h1");
@@ -40,7 +41,7 @@ window.onload = function () {
         const image1 = projSection.querySelector("img");
         image1.src = data[indexp].image;
         // Eliminar después de CSS:
-        image1.style.height = "400px";
+        //image1.style.height = "400px";
         const parag = projSection.querySelector("#p-main-p");
         parag.innerHTML = data[indexp].content;
 
@@ -48,33 +49,36 @@ window.onload = function () {
         const h2Other = projSection2.querySelector("h2");
         h2Other.innerHTML = "Other Projects";
 
-        //other projects dinámico
-
         const otherProjArr = getArrayOfThree(data);
         console.log(otherProjArr);
-        //FOR EACH de los 3
-        otherProjArr.forEach((element) => {
-          const divInd = document.createElement("div");
-          divForCards.appendChild(divInd);
-          const imagecard1 = document.createElement("img");
-          imagecard1.src = element.image;
-          //eliminar después de CSS
-          imagecard1.style.width = "120px";
-          divInd.appendChild(imagecard1);
+        getOtherProjects(otherProjArr);
 
-          const h4 = document.createElement("h4");
-        divInd.appendChild(h4);
-        h4.innerHTML = element.name;
+        // ZONA DE DECLARACIÓN DE FUNCIONES //
 
-        const pcard1 = document.createElement("p");
-        divInd.appendChild(pcard1);
-        pcard1.innerHTML = element.description;
+        function getOtherProjects(array) {
+          array.forEach((element) => {
+            const divInd = document.createElement("div");
+            divForCards.appendChild(divInd);
+            const imagecard1 = document.createElement("img");
+            imagecard1.src = element.image;
+            //eliminar después de CSS
+            imagecard1.style.width = "120px";
+            divInd.appendChild(imagecard1);
 
-        const acard1 = document.createElement("a");
-        divInd.appendChild(acard1);
-        acard1.innerHTML = "Learn More";
-        acard1.href = `./projects.html?uuid=${element.uuid}`;
-        });
+            const h4 = document.createElement("h4");
+            divInd.appendChild(h4);
+            h4.innerHTML = element.name;
+
+            const pcard1 = document.createElement("p");
+            divInd.appendChild(pcard1);
+            pcard1.innerHTML = element.description;
+
+            const acard1 = document.createElement("a");
+            divInd.appendChild(acard1);
+            acard1.innerHTML = "Learn More";
+            acard1.href = `./projects.html?uuid=${element.uuid}`;
+          });
+        }
 
         function getArrayOfThree(array) {
           const dataFiltered = array.filter((article) => {

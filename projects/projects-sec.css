@@ -1,19 +1,38 @@
 #p-proj-section {
-   margin-left: 5vw;
-    margin-right: 5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+#p-proj-section img {
+  height: 400px;
 }
 
 .p-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .p-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width = 748px) {
+/*Falta hacer que la imagen no se distorsione*/
 
+@media (min-width: 748px) {
+  #p-proj-section {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+  .p-title div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .p-title h1 {
+    text-align: start;
+  }
+  
 }
