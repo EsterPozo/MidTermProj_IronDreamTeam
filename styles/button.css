@@ -1,0 +1,17 @@
+.btn a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    padding: 15px 36px;
+    background-color:#072AC8;
+    color: white;
+    cursor: pointer;
+    /*display: none;  for mobile */
+}
+.btn a:hover {
+    background-color: #43D2FF;
+}
+.menu-link.grey:hover {
+    color: #072AC8;
+}
