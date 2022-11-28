@@ -1,27 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
+#contact-section {
+    margin-top: 20px;
 }
 
-input, textarea {
-    /*width: 50vw;*/
-    padding: 1em;
-    margin-top: 10px;
+#contact-section h1 {
+  text-align: center;
+}
+
+#contact-section input,
+#contact-section textarea {
+  /*width: 50vw;*/
+  padding: 1em;
+  margin-top: 10px;
   line-height: 1.4;
-  background-color: #F2F4FC;
-   border: none;
+  background-color: #f2f4fc;
+  border: none;
   -webkit-transition: 0.35s ease-in-out;
   -moz-transition: 0.35s ease-in-out;
   -o-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  font-family: "Roboto";
+  font-style: normal;
 }
 
-label {
-    margin: 1em;
+#contact-section label {
+  margin-top: 10px;
 }
 
-form {
+#contact-section form {
+  display: flex;
+  flex-direction: column;
+  /*Margin a modificar luego*/
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.subform {
     display: flex;
     flex-direction: column;
+}
+
+#contact-section button {
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    padding: 15px 36px;
+    margin-top: 20px;
+    background-color:#072AC8;
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+#contact-section button:hover {
+    background-color: #43D2FF;
+}
+
+#contact-section input[required] {
+    border-color: red;
+}
+
+@media only screen and (min-width : 768px) {
+
+.subform2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+ .inline {
+    width: 40vw;
+} 
+
 }
