@@ -12,7 +12,7 @@ submitBtn.addEventListener("click", function(e) {
    input2.forEach(function (element) {
     if (element.required) {
         console.log(element);
-        element.style.border = "3px solid #FF0000";
+        element.style.border = "2.5px solid #FF0000";
         
         const div2 =  element.parentNode;
         const label2 = div2.querySelector('label');

@@ -20,9 +20,9 @@ fetch(url2)
     //Title area
     const h1 = projSection.querySelector('h1');
     h1.innerHTML = data[4].name;
-    const p1 = projSection.querySelector('#under-h1');
+    const p1 = projSection.querySelector('#p-under-h1');
     p1.innerHTML = data[4].description;
-    const p2 = projSection.querySelector('#date');
+    const p2 = projSection.querySelector('#p-date');
     p2.innerHTML = 'Completed on: '+ data[4].completed_on;
     //Middle area
     const image1 = projSection.querySelector('img');
@@ -36,7 +36,7 @@ fetch(url2)
     const h2Other = projSection2.querySelector('h2');
     h2Other.innerHTML = "Other Projects"
 
-    const card1 =projSection2.querySelector('#card1');
+    const card1 =projSection2.querySelector('#p-card1');
     const imagecard1 = document.createElement('img');
     imagecard1.src = data[0].image;
         //eliminar después de CSS
