@@ -1,4 +1,19 @@
 #p-proj-section {
-   /* margin-left: 20vw;
-    margin-right: 20vw;*/
+   margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.p-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.p-body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width = 748px) {
+
 }
