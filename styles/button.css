@@ -4,10 +4,19 @@
     font-size: 17px;
     line-height: 130%;
     padding: 15px 36px;
+    cursor: pointer;
+    
+}
+.btn-blue a{
     background-color:#072AC8;
     color: white;
-    cursor: pointer;
-    /*display: none;  for mobile */
+}
+.btn-white a{
+    background-color:white;
+    color: #6B708D;
+}
+.btn-contact{
+    display: none;
 }
 .btn a:hover {
     background-color: #43D2FF;

@@ -1,0 +1,11 @@
+.section1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-sec {
+    display: flex;
+    flex-direction: column;
+}
