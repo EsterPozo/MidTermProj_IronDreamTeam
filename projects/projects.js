@@ -12,7 +12,7 @@ const indexp = 4;
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
 const projSection2 = document.querySelector("#p-other-proj-section");
-const divForCards = projSection2.querySelector('#div-other');
+const divForCards = projSection2.querySelector("#div-other");
 const projCtaSec = document.querySelector("#p-cta-section");
 
 //FUnctions
@@ -52,17 +52,29 @@ window.onload = function () {
 
         const otherProjArr = getArrayOfThree(data);
         console.log(otherProjArr);
-
+        //FOR EACH de los 3
         otherProjArr.forEach((element) => {
-    const divInd = document.createElement('div');
-    divForCards.appendChild(divInd)
-    const imagecard1 = document.createElement("img");
-        imagecard1.src = element.image;
-        //eliminar después de CSS
-        imagecard1.style.width = "120px";
-        divInd.appendChild(imagecard1);
+          const divInd = document.createElement("div");
+          divForCards.appendChild(divInd);
+          const imagecard1 = document.createElement("img");
+          imagecard1.src = element.image;
+          //eliminar después de CSS
+          imagecard1.style.width = "120px";
+          divInd.appendChild(imagecard1);
 
-        })
+          const h4 = document.createElement("h4");
+        divInd.appendChild(h4);
+        h4.innerHTML = element.name;
+
+        const pcard1 = document.createElement("p");
+        divInd.appendChild(pcard1);
+        pcard1.innerHTML = element.description;
+
+        const acard1 = document.createElement("a");
+        divInd.appendChild(acard1);
+        acard1.innerHTML = "Learn More";
+        acard1.href = `./projects.html?uuid=${element.uuid}`;
+        });
 
         function getArrayOfThree(array) {
           const dataFiltered = array.filter((article) => {
