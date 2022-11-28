@@ -7,10 +7,10 @@ submitBtn.addEventListener("click", function(e) {
     //console.log(required);
     
     const input2 = contSection.querySelectorAll('input');
-    //console.log(input2[0]);
+    console.log(input2[0]);
     
    input2.forEach(function (element) {
-    if (element.required) {
+    if (element.required && element.value === "") {
         console.log(element);
         element.style.border = "2.5px solid #FF0000";
         
