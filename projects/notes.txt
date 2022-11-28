@@ -12,3 +12,123 @@ async function getData() {
 }
 
 getData();
+
+
+//intentos en p-card random
+
+//Intenti 1
+
+/* data.forEach((dataElem) => {
+            
+              imagecard.src = data[random].image;
+              card.appendChild(imagecard);
+              imagecard.style.width = "200px"; 
+            
+          }); */
+
+//intento 2
+
+pCards.forEach((card) => {
+          const imagecard = document.createElement("img");
+          //crear un numero random
+          const random = Math.floor(Math.random() * data.length);
+          const randomStr = random.toString();
+          console.log(randomStr);
+
+          if (data[random].uuid !== indexp ) {
+            imagecard.src = data[random].image;
+            card.appendChild(imagecard);
+              imagecard.style.width = "200px"; 
+          }
+
+          /* const found = data.find((element) => {
+            console.log(element.uuid);
+
+            return element.uuid !== "indexp" && element.uuid === "randomStr";
+          });
+          console.log("found is:" + found); */
+
+          
+        });
+
+FOTO de las p-cards antes de rpobar de hacer una por una
+
+ //SECTION2 - Other projects
+        const h2Other = projSection2.querySelector("h2");
+        h2Other.innerHTML = "Other Projects";
+
+        //ejemplo estático
+        const card1 = projSection2.querySelector("#p-card1");
+        const imagecard1 = document.createElement("img");
+        imagecard1.src = data[indexp].image;
+        //eliminar después de CSS
+        imagecard1.style.width = "120px";
+        card1.appendChild(imagecard1);
+        const h4 = document.createElement("h4");
+        card1.appendChild(h4);
+        h4.innerHTML = data[indexp].name;
+        const pcard1 = document.createElement("p");
+        card1.appendChild(pcard1);
+        pcard1.innerHTML = data[indexp].description;
+        const acard1 = document.createElement("a");
+        card1.appendChild(acard1);
+        acard1.innerHTML = "Learn More";
+        acard1.href = "#";
+        //fin ejemplo estático
+
+        //other projects dinámico
+        const pCards = projSection2.querySelectorAll(".p-card");
+        console.log(pCards);
+
+        pCards.forEach((card) => {
+          const imagecard = document.createElement("img");
+          //crear un numero random
+          const random = Math.floor(Math.random() * data.length);
+          const randomStr = random.toString();
+          console.log(randomStr);
+
+          if (data[random].uuid !== indexp ) {
+            imagecard.src = data[random].image;
+            card.appendChild(imagecard);
+              imagecard.style.width = "200px"; 
+          }
+
+          /* const found = data.find((element) => {
+            console.log(element.uuid);
+
+            return element.uuid !== "indexp" && element.uuid === "randomStr";
+          });
+          console.log("found is:" + found); */
+
+          
+        });
+
+        //ejemplo estático
+        const card1 = projSection2.querySelector("#p-card1");
+        const imagecard1 = document.createElement("img");
+        imagecard1.src = data[indexp].image;
+        //eliminar después de CSS
+        imagecard1.style.width = "120px";
+        card1.appendChild(imagecard1);
+        const h4 = document.createElement("h4");
+        card1.appendChild(h4);
+        h4.innerHTML = data[indexp].name;
+        const pcard1 = document.createElement("p");
+        card1.appendChild(pcard1);
+        pcard1.innerHTML = data[indexp].description;
+        const acard1 = document.createElement("a");
+        card1.appendChild(acard1);
+        acard1.innerHTML = "Learn More";
+        acard1.href = "#";
+        //fin ejemplo estático
+
+        //EXAMPLE OF RANDOM ARRAY
+        const example = ["a","b","c","d"];
+        console.log(example);
+        example.sort((a,b) => {
+            /* if (a < b) return 0.5 - Math.random();
+            if (a > b) return 0.5 - Math.random();
+            if (a === b) return 0;  */
+            return 0.5 - Math.random();
+        })
+        console.log(example);
