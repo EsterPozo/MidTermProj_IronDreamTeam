@@ -12,7 +12,10 @@ const indexp = 4;
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
 const projSection2 = document.querySelector("#p-other-proj-section");
+const divForCards = projSection2.querySelector('#div-other');
 const projCtaSec = document.querySelector("#p-cta-section");
+
+//FUnctions
 
 //OPCIÓN 1 (THEN)
 
@@ -21,9 +24,9 @@ window.onload = function () {
     .then((result) => {
       result.json().then((data) => {
         //console.log("segundo then")
-        console.log(data)
+        console.log(data);
         const pageId = data[indexp].uuid;
-        console.log(pageId);
+        //console.log(pageId);
 
         //SECTION 1
         //Title area
@@ -45,35 +48,40 @@ window.onload = function () {
         const h2Other = projSection2.querySelector("h2");
         h2Other.innerHTML = "Other Projects";
 
-        
-
         //other projects dinámico
-        const dataFiltered = data.filter((article) => {
-            return article.uuid !== pageId;
+
+        const otherProjArr = getArrayOfThree(data);
+        console.log(otherProjArr);
+
+        otherProjArr.forEach((element) => {
+    const divInd = document.createElement('div');
+    divForCards.appendChild(divInd)
+    const imagecard1 = document.createElement("img");
+        imagecard1.src = element.image;
+        //eliminar después de CSS
+        imagecard1.style.width = "120px";
+        divInd.appendChild(imagecard1);
+
         })
-        
-        console.log(dataFiltered)
-        dataFiltered.sort((a,b) => { 
-            
+
+        function getArrayOfThree(array) {
+          const dataFiltered = array.filter((article) => {
+            return article.uuid !== pageId;
+          });
+          dataFiltered.sort((a, b) => {
             if (a.uuid < b.uuid) return 0.5 - Math.random();
             if (a.uuid > b.uuid) return 0.5 - Math.random();
-            if (a.uuid === b.uuid) return 0.5 - Math.random();  
-           // return 0.5 - Math.random()
-        });
+            if (a.uuid === b.uuid) return 0.5 - Math.random();
+            // return 0.5 - Math.random()
+          });
+          const dataOnlyThree = dataFiltered.slice(0, 3);
+          return dataOnlyThree;
+        }
 
-        console.log(dataFiltered)
-
-        
-        //console.log(randomArray)
-
-       
-   
         //CTA SECTION
 
         //FOOTER
       });
     })
     .catch((err) => console.log("error!"));
-
-   
 };
