@@ -12,7 +12,7 @@ const indexp = 4;
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
 const projSection2 = document.querySelector("#p-other-proj-section");
-const divForCards = projSection2.querySelector("#div-other");
+const divForCards = projSection2.querySelector(".external-div");
 const projCtaSec = document.querySelector("#p-cta-section");
 
 //FUnctions
@@ -62,7 +62,7 @@ window.onload = function () {
             divInd.className = "internalDiv"
             divForCards.appendChild(divInd);
             const imagecard1 = document.createElement("img");
-            imagecard1.className = "p-otherProj-img";
+            imagecard1.className = "p-card-img";
             imagecard1.src = element.image;
             //eliminar después de CSS
             //imagecard1.style.width = "120px";

@@ -12,7 +12,7 @@
   padding: 1em;
   margin-top: 10px;
   line-height: 1.4;
-  background-color: #f2f4fc;
+  background-color: rgba(107, 112, 141, 0.1);
   border: none;
   -webkit-transition: 0.35s ease-in-out;
   -moz-transition: 0.35s ease-in-out;
