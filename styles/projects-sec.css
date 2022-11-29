@@ -95,7 +95,7 @@ color:#292E47;
   /*width: 90%;*/
   margin-top: 40px;
   box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.25);
-  /*hay que revisar el blur*/
+  
 }
 
 .p-card-img {
@@ -106,7 +106,6 @@ height: 240px;
 
 .internalDiv h4 {
   font-size: 24px;
-  /*line-height: 28px;*/
   color: #292E47;
   margin-top:30px;
   margin-bottom: 0px;
@@ -129,7 +128,7 @@ margin-top: 54px;
 margin-bottom: 30px;;
 /*hablar con Anastasia del color azul del ancor*/
 }
-/*faltan algunos los colores de fondo y letra*/
+
 
 /*RECENT PROJECT SECTION - HTML1!!!!!*/
 
@@ -149,6 +148,12 @@ margin-bottom: 30px;;
 #section-recent h2 {
   width: 100%;
   text-align: center;
+
+  font-weight: 700;
+  font-size: 40px;
+  color: #292E47;
+  margin-block-end: 0;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 769px) {
@@ -178,7 +183,7 @@ margin-bottom: 30px;;
        
   }
   .internalDiv {
-    background-color: aliceblue;
+    
     align-items: flex-start;
 
    /*width: 30%;*/
@@ -201,10 +206,18 @@ margin-bottom: 30px;;
   align-items: baseline;
   /*flex-wrap: wrap;*/
   width: 100%;
-  
-  
 }
 
+/*RECENT PROJECTS*/
+#section-recent {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+#section-recent h2 {
+
+  text-align: start;
+
+}
 }
 
 @media screen and (min-width: 1025px) {
