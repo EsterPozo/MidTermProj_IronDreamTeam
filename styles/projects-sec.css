@@ -1,3 +1,4 @@
+/*Main projects section */
 #p-proj-section {
   margin-left: 3vw;
   margin-right: 3vw;
@@ -18,10 +19,70 @@
   display: flex;
   flex-direction: column;
 }
-
 /*Falta hacer que la imagen no se distorsione*/
 
+/*Css for other projects section */
+
+#p-other-proj-section { 
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#p-other-proj-section h2 {
+  width: 90%;
+  text-align: center;
+}
+.div-other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.internalDiv {
+ /* background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*width: 90%;*/
+  margin-top: 40px;
+}
+
+.p-otherProj-img {
+
+width: 340px;
+}
+
+.internalDiv h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #292E47;
+  margin-top:30px;
+  
+}
+
+.internalDiv p {
+  font-size: 17px;
+  line-height: 150%;
+  color: #6b708d;
+  margin-top: 10px;
+}
+
+.internalDiv a {
+  font-size: 17px;
+line-height: 150%;
+text-decoration: none;
+margin-top: 54px;
+/*hablar con Anastasia del color azul del ancor*/
+}
+/*faltan los colores de fondo y letra*/
+
+
+
 @media (min-width: 748px) {
+  /*main section*/
   #p-proj-section {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -35,5 +96,16 @@
   .p-title h1 {
     text-align: start;
   }
+  /*other projecs section*/
+  #p-other-proj-section { 
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .internalDiv {
+    background-color: aliceblue;
+    align-items: flex-start;
+   /*width: 30%;*/
+  }
+
   
 }

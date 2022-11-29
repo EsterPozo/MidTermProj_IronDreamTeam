@@ -37,6 +37,7 @@ window.onload = function () {
         p1.innerHTML = data[indexp].description;
         const p2 = projSection.querySelector("#p-date");
         p2.innerHTML = "Completed on: " + data[indexp].completed_on;
+
         //Middle area
         const image1 = projSection.querySelector("img");
         image1.src = data[indexp].image;
@@ -58,11 +59,13 @@ window.onload = function () {
         function getOtherProjects(array) {
           array.forEach((element) => {
             const divInd = document.createElement("div");
+            divInd.className = "internalDiv"
             divForCards.appendChild(divInd);
             const imagecard1 = document.createElement("img");
+            imagecard1.className = "p-otherProj-img";
             imagecard1.src = element.image;
             //eliminar después de CSS
-            imagecard1.style.width = "120px";
+            //imagecard1.style.width = "120px";
             divInd.appendChild(imagecard1);
 
             const h4 = document.createElement("h4");
