@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-.div-other {
+.external-div {
   display: flex;
   flex-direction: column;
   width:100%;
@@ -127,7 +127,7 @@ margin-bottom: 30px;;
   margin-left: 30px;
 }
 
-.div-other {
+.external-div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

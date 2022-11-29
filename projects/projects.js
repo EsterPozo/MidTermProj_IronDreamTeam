@@ -12,7 +12,7 @@ const indexp = 4;
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
 const projSection2 = document.querySelector("#p-other-proj-section");
-const divForCards = projSection2.querySelector("#div-other");
+const divForCards = projSection2.querySelector("#external-div");
 const projCtaSec = document.querySelector("#p-cta-section");
 
 //FUnctions
