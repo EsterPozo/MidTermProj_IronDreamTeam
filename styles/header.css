@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 769px) {
     .header {
-        margin: 0px 50px;
+        margin: 0px;
         background-color: white;
         height: 122px;
         padding: 0;
@@ -46,7 +46,11 @@
     }
     .btn-contact {
         display: block;
-        margin-right: 10%;
+        margin-right: 50px;
     }
+    .logo-img {
+        padding-left: 50px;
+    }
+
     
 }
