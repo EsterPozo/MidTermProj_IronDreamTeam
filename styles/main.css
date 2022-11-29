@@ -6,6 +6,7 @@
 @import url(./subscribe.css);
 @import url(./section1.css);
 @import url(./projects-sec.css);
+@import url(./testimonial.css);
 html, body, ul {
     background-color: #F4F6FC;
     margin: 0;
@@ -33,3 +34,4 @@ li, a {
 .blue-sky{
     color: #43D2FF;
 }
+

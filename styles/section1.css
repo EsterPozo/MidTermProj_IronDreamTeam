@@ -111,25 +111,34 @@
   }
   .main-img::before{
     content: "";
-    background-image: url("../project-assets/hero-section/card-1.png");
+    background-image: url("./project-assets/hero-section/card-1.png");
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
     width: 11.8em;
     height: 13.5em;
   }
-  .main-img::after{
+  .empty-helper::before {
+    content: "";
+    background-image: url("./project-assets/hero-section/card-2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 11.8em;
+    height: 13.5em;
+    bottom: -37px;
+    right: 72px;
+  }
+  /* .main-img::after{
     display: block;
     content: "";
-    background-image: url("../project-assets/hero-section/card-2.png");
+    background-image: url("./project-assets/hero-section/card-2.png");
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
     width: 11.8em;
-    height: 13.5em;
-    right: 40px;
-    top: 508px;
-  }
+    height: 13.5em;  
+  } */
   .clients-list {
     margin-top: 20%;
   }
@@ -139,7 +148,6 @@
   .main-sec {
     height: 100vh;
     margin-right: 50px;
-    margin-left: 50px;
     margin-top: 0;
   }
   .main-buttons {
