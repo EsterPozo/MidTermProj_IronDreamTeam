@@ -1,24 +1,29 @@
-.btn a{
+.btn{
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 130%;
     padding: 15px 36px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
-.btn-blue a{
+
+
+.btn-blue {
     background-color:#072AC8;
     color: white;
 }
-.btn-white a{
+.btn-white {
     background-color:white;
     color: #6B708D;
 }
 .btn-contact{
     display: none;
+    color: white;
 }
-.btn a:hover {
+.btn-contact a{
+    color: white;
+}
+.btn:hover {
     background-color: #43D2FF;
 }
 .menu-link.grey:hover {
