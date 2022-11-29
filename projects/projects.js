@@ -36,7 +36,7 @@ window.onload = function () {
         const p1 = projSection.querySelector("#p-under-h1");
         p1.innerHTML = data[indexp].description;
         const p2 = projSection.querySelector("#p-date");
-        p2.innerHTML = "Completed on: " + data[indexp].completed_on;
+        p2.innerHTML = "<span>Completed on: </span>" + data[indexp].completed_on;
 
         //Middle area
         const image1 = projSection.querySelector("img");

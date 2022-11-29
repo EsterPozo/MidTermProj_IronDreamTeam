@@ -1,25 +1,65 @@
+@import url(../projects/our-service.css);
+
 /*MAIN PROJECT SECTION  */
 #p-proj-section {
-  margin-left: 3vw;
-  margin-right: 3vw;
-  padding-top: 130px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-top: 150px;
+}
+
+#p-proj-section h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color:#292E47;
+  margin-block-end: 0em;
+}
+
+#p-under-h1 {
+  color: #6b708d;
+  font-size: 24px;
+  font-weight: 500px;
+  font-weight: 400;
+  margin-block-end: 0em;
+}
+
+#p-date {
+color:#6b708d;
+font-size: 20px;
+margin-block-end: 0em;
+}
+#p-date span {
+color:#292E47;
 }
 
 #p-proj-section img {
   height: 400px;
+  /*para que no deforme imagen*/
+  object-fit: cover;
+  width: 100%;
+  box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 0.30);
+  margin-bottom: 70px;
 }
 
 .p-title {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 80px;
+  
 }
+
 
 .p-body {
   display: flex;
   flex-direction: column;
 }
-/*Falta hacer que la imagen no se distorsione*/
+
+.p-body p {
+  color: #6b708d;
+  font-size: 20px;
+  text-align: justify;
+  
+}
 
 /*OTHER PROJECT SECTION */
 
@@ -31,11 +71,15 @@
   align-items: center;
   justify-content: center;
   height: auto;
+  margin-top: 50px;
 }
 
 #p-other-proj-section h2 {
   width: 100%;
   text-align: center;
+  color:#292E47;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .external-div {
@@ -53,7 +97,7 @@
   /*width: 90%;*/
   margin-top: 40px;
   box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.25);
-  /*hay que revisar el blur*/
+  
 }
 
 .p-card-img {
@@ -64,7 +108,6 @@ height: 240px;
 
 .internalDiv h4 {
   font-size: 24px;
-  /*line-height: 28px;*/
   color: #292E47;
   margin-top:30px;
   margin-bottom: 0px;
@@ -87,7 +130,7 @@ margin-top: 54px;
 margin-bottom: 30px;;
 /*hablar con Anastasia del color azul del ancor*/
 }
-/*faltan algunos los colores de fondo y letra*/
+
 
 /*RECENT PROJECT SECTION - HTML1!!!!!*/
 
@@ -107,6 +150,12 @@ margin-bottom: 30px;;
 #section-recent h2 {
   width: 100%;
   text-align: center;
+
+  font-weight: 700;
+  font-size: 40px;
+  color: #292E47;
+  margin-block-end: 0;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 769px) {
@@ -124,6 +173,11 @@ margin-bottom: 30px;;
   .p-title h1 {
     text-align: start;
   }
+  .p-title > div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
   /*other projecs section*/
   #p-other-proj-section { 
     margin-left: 10vw;
@@ -131,7 +185,7 @@ margin-bottom: 30px;;
        
   }
   .internalDiv {
-    background-color: aliceblue;
+    
     align-items: flex-start;
 
    /*width: 30%;*/
@@ -149,15 +203,23 @@ margin-bottom: 30px;;
 .external-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   
   align-items: baseline;
   /*flex-wrap: wrap;*/
   width: 100%;
-  
-  
 }
 
+/*RECENT PROJECTS*/
+#section-recent {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+#section-recent h2 {
+
+  text-align: start;
+
+}
 }
 
 @media screen and (min-width: 1025px) {
