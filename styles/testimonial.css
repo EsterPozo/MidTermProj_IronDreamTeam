@@ -1,5 +1,6 @@
 .testimonial-sec {
     height: 80vh;
+    position: relative;
 }
 .memoji{
     display: none;
@@ -70,8 +71,65 @@
         font-size: 14px;
     }
     .testimonial-box {
-        background-image: url(../project-assets/testimonial-section/orbit.png) center center no-repeat;
+        background-image: url("../project-assets/testimonial-section/orbit.png");
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        position: relative;
+        color: #292E47;
+
+    }
+}
+@media  (min-width: 769px) {
+    .testimonial-box {
+        margin-top: 150px;
+        margin-right: 60px;
+        margin-left: 60px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 71px 50px 73px;
+    }
+    .testimonial-box h2 {
+        font-size: 30px; 
+    }
+    .testimonial-comment{
+        font-size: 18px;
+        padding: 0 10%;
+    }
+    .memoji{
+        display: block;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+    }
+    .memoji1{
+        left: 7vw;
+        bottom: 55vh;
+    }
+    .memoji2{
+        right: 7vw;
+        bottom: 55vh;
+    }
+    .memoji3{
+        left: 7vw;
+        top: 50vh;
+    }
+    .memoji4{
+        right: 7vw;
+        top: 50vh;
+    }
+}
+@media screen and (min-width: 1025px){
+    .testimonial-box{
+        padding: 51px 50px 73px;
+    }
+    .testimonial-comment{
+        font-size: 24px;
+        padding: 0 10%;
+    }
+    .testimonial-box h2 {
+        font-size: 40px; 
     }
 }
