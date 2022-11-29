@@ -140,7 +140,7 @@
     height: 100vh;
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 20%;
+    margin-top: 0;
   }
   .main-buttons {
     flex-direction: row;
@@ -172,5 +172,8 @@
   .main-img::after{
     right: 5%;
     top: 75%;
+  }
+  .clients-list {
+    margin-top: 0;
   }
 }
