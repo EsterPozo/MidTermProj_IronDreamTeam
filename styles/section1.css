@@ -111,7 +111,7 @@
   }
   .main-img::before{
     content: "";
-    background-image: url("./project-assets/hero-section/card-1.png");
+    background-image: url("../project-assets/hero-section/card-1.png");
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
@@ -120,7 +120,7 @@
   }
   .empty-helper::before {
     content: "";
-    background-image: url("./project-assets/hero-section/card-2.png");
+    background-image: url("../project-assets/hero-section/card-2.png");
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
@@ -132,7 +132,7 @@
   /* .main-img::after{
     display: block;
     content: "";
-    background-image: url("./project-assets/hero-section/card-2.png");
+    background-image: url("../project-assets/hero-section/card-2.png");
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
