@@ -1,7 +1,8 @@
 const url2 =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
-const divForCards = document.querySelector("#external-div");
+  const recentSection = document.querySelector('#section-recent')
+const divForCards = recentSection.querySelector(".external-div");
 
 window.onload = function () {
   fetch(url2)
@@ -25,7 +26,7 @@ window.onload = function () {
             divInd.className = "internalDiv";
             divForCards.appendChild(divInd);
             const imagecard1 = document.createElement("img");
-            imagecard1.className = "p-otherProj-img";
+            imagecard1.className = "p-card-img";
             imagecard1.src = element.image;
             divInd.appendChild(imagecard1);
 

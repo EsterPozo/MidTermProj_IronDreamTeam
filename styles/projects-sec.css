@@ -1,4 +1,4 @@
-/*Main projects section */
+/*MAIN PROJECT SECTION  */
 #p-proj-section {
   margin-left: 3vw;
   margin-right: 3vw;
@@ -21,7 +21,7 @@
 }
 /*Falta hacer que la imagen no se distorsione*/
 
-/*Css for other projects section */
+/*OTHER PROJECT SECTION */
 
 #p-other-proj-section { 
   margin-left: 3vw;
@@ -41,8 +41,8 @@
 .external-div {
   display: flex;
   flex-direction: column;
-  width:100%;
-  flex-wrap: nowrap;
+  
+  flex-wrap: wrap;
 }
 
 .internalDiv {
@@ -56,9 +56,10 @@
   /*hay que revisar el blur*/
 }
 
-.p-otherProj-img {
+.p-card-img {
 
 width: 340px;
+height: 240px;
 }
 
 .internalDiv h4 {
@@ -73,21 +74,22 @@ width: 340px;
 
 .internalDiv p {
   font-size: 17px;
-  /*line-height: 150%;*/
+  
   color: #6b708d;
   margin-top: 10px;
 }
 
 .internalDiv a {
   font-size: 17px;
-/*line-height: 150%;*/
+
 text-decoration: none;
 margin-top: 54px;
 margin-bottom: 30px;;
 /*hablar con Anastasia del color azul del ancor*/
 }
-/*faltan los colores de fondo y letra*/
+/*faltan algunos los colores de fondo y letra*/
 
+/*RECENT PROJECT SECTION - HTML1!!!!!*/
 
 
 @media (min-width: 748px) {
@@ -133,7 +135,7 @@ margin-bottom: 30px;;
   justify-content: space-evenly;
   align-items: baseline;
   flex-wrap: nowrap;
-  width: 90%;
+  
   
 }
 
