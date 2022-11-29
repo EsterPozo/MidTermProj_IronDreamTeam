@@ -127,8 +127,8 @@
     background-size: contain;
     width: 11.8em;
     height: 13.5em;
-    right: 5%;
-    top: 75%;
+    right: 40px;
+    top: 508px;
   }
   .clients-list {
     margin-top: 20%;
@@ -166,12 +166,7 @@
     font-size: 17px;
   }
   .main1-img {
-   
     width: 408px;
-  }
-  .main-img::after{
-    right: 5%;
-    top: 75%;
   }
   .clients-list {
     margin-top: 0;
