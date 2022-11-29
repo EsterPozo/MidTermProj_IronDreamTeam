@@ -36,10 +36,10 @@
   text-align: center;
 }
 .div-other {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  justify-content: center; */
+  /*width: 100%;*/
 }
 .internalDiv {
  background-color: white;
@@ -48,7 +48,8 @@
   align-items: center;
   /*width: 90%;*/
   margin-top: 40px;
-  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 0.25);
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.25);
+  /*hay que revisar el blur*/
 }
 
 .p-otherProj-img {
@@ -58,22 +59,24 @@ width: 340px;
 
 .internalDiv h4 {
   font-size: 24px;
-  line-height: 28px;
+  /*line-height: 28px;*/
   color: #292E47;
   margin-top:30px;
+  margin-bottom: 0px;
+  font-weight: 500;
   
 }
 
 .internalDiv p {
   font-size: 17px;
-  line-height: 150%;
+  /*line-height: 150%;*/
   color: #6b708d;
   margin-top: 10px;
 }
 
 .internalDiv a {
   font-size: 17px;
-line-height: 150%;
+/*line-height: 150%;*/
 text-decoration: none;
 margin-top: 54px;
 margin-bottom: 30px;;
@@ -88,6 +91,7 @@ margin-bottom: 30px;;
   #p-proj-section {
     margin-left: 10vw;
     margin-right: 10vw;
+    background-color: red;
     
   }
   .p-title div {
@@ -106,8 +110,25 @@ margin-bottom: 30px;;
   .internalDiv {
     background-color: aliceblue;
     align-items: flex-start;
+
    /*width: 30%;*/
   }
+.internalDiv h4 {
+  margin-left: 30px;
+}
+.internalDiv p {
+  margin-left: 30px;
+}
+.internalDiv a {
+  margin-left: 30px;
+}
 
+.div-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
   
+}
+
 }
