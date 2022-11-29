@@ -90,6 +90,7 @@
         justify-content: center;
         align-items: center;
         padding: 71px 50px 73px;
+        height: 500px;
     }
     .testimonial-box h2 {
         font-size: 30px; 
