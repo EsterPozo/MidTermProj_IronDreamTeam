@@ -105,6 +105,7 @@
   }
   .main-img{
     display: block;
+    position: relative;
   }
   .main1-img {
     width: 450px;
@@ -116,9 +117,17 @@
     position: absolute;
     background-size: contain;
     width: 11.8em;
-    height: 13.5em;
+    height: 13.5em; 
   }
-  .empty-helper::before {
+
+  .card2 {
+    position: absolute;
+    width: 11.8em;
+    height: 13.5em;
+    right: 15px;
+    top: 370px;  
+  }
+  /* .empty-helper::before {
     content: "";
     background-image: url("../project-assets/hero-section/card-2.png");
     background-repeat: no-repeat;
@@ -128,7 +137,7 @@
     height: 13.5em;
     bottom: -37px;
     right: 72px;
-  } 
+  }  */
   /* .main-img::after{
     display: block;
     content: "";
@@ -179,5 +188,8 @@
   }
   .clients-list {
     margin-top: 0;
+  }
+  .card2 {
+    top: 350px;  
   }
 }
