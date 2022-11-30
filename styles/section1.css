@@ -90,7 +90,7 @@
 @media screen and (min-width: 769px) {
   .main-sec {
     flex-direction: row;
-    margin-top: 20%;
+    margin-top: 35%;
   }
   .main-content {
     justify-content: center;
@@ -158,7 +158,7 @@
   .main-sec {
     height: 100vh;
     margin-right: 50px;
-    margin-top: 0;
+    margin-top: 10%;
   }
   .main-buttons {
     flex-direction: row;
