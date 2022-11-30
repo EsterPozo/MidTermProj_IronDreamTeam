@@ -24,7 +24,7 @@
 .btn-contact a{
     color: white;
 }
-.btn:hover {
+.btn a:hover {
     background-color: #43D2FF;
 }
 .menu-link.grey:hover {
