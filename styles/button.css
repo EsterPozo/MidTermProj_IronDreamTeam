@@ -1,10 +1,10 @@
-.btn {
+.btn a{
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 130%;
     padding: 15px 36px;
-    cursor: pointer;   
+    cursor: pointer;  
 }
 
 

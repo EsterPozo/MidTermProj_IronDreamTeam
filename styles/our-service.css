@@ -68,6 +68,7 @@
 
   #our-services-section h2 {
     text-align: start;
+    margin-top: 20%;
   }
 
   .service-external-div {
@@ -96,5 +97,10 @@
 
   .service-internal-div a {
     margin-left: 30px;
+  }
+}
+@media (min-width: 769px) {
+  #our-services-section h2 {
+    margin-top: 15%;
   }
 }
