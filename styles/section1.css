@@ -22,7 +22,7 @@
 .main-content h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 40px;
   color: #292e47;
 }
 .main-content p {
@@ -68,6 +68,12 @@
   .section1 {
     justify-content: space-around;
     padding-top: 80px;
+  }
+
+  .main-content h1 {
+    
+    font-size: 40px;
+   
   }
   .clients-item {
     margin-right: 30px;
