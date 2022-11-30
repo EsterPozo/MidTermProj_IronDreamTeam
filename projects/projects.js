@@ -4,18 +4,15 @@ const url2 =
 //Coger el parametro uuid del url
 const params = new URLSearchParams(window.location.search);
 
-const index1 = params.get("uuid");
-//console.log(index1);
-//borar cuando el setup esté hecho en index
-const indexp = 4;
+const pageNum= params.get("uuid");
+console.log(pageNum);
+
 
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
 const projSection2 = document.querySelector("#p-other-proj-section");
 const divForCards = projSection2.querySelector(".external-div");
 const projCtaSec = document.querySelector("#p-cta-section");
-
-//FUnctions
 
 //OPCIÓN 1 (THEN)
 
@@ -25,8 +22,22 @@ window.onload = function () {
       result.json().then((data) => {
         //console.log("segundo then")
         console.log(data);
+        
+        /* if (!pageNum) {
+          const indexp = data.findIndex(object => {
+            return object.uuid === pageNum;
+          })
+        } else if (pageNum){
+          const indexp = 4;
+        } */
+
+        const indexp = data.findIndex(object => {
+          return object.uuid === pageNum;
+        }) 
+        console.log(indexp);
         const pageId = data[indexp].uuid;
-        //console.log(pageId);
+       console.log(pageId);
+      
 
         //SECTION 1
         //Title area

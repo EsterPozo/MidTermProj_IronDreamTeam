@@ -30,7 +30,7 @@ window.onload = function () {
         //console.log("segundo then")
         console.log(data);
 
-        //Recent pprojects
+        //Recent projects
 
         const recentProjArr = getArrayOfThree(data);
         console.log(recentProjArr);
@@ -60,7 +60,7 @@ window.onload = function () {
             const acard1 = document.createElement("a");
             divInd.appendChild(acard1);
             acard1.innerHTML = "Learn More";
-            acard1.href = `./projects.html?uuid=${element.uuid}`;
+            acard1.href = `./projects/projects.html?uuid=${element.uuid}`;
           });
         }
 
