@@ -61,6 +61,7 @@
   align-items: center;
   justify-content: center;
   list-style: none;
+  background-color: #ecf7ff;
 }
 .menu-item {
   margin-right: 0px;
