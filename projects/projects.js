@@ -1,7 +1,25 @@
 const url2 =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
-//Coger el parametro uuid del url
+//HEADER BURGUER
+const button = document.querySelector("#burger");
+const menu = document.querySelector("#overlay");
+const buttonProjects = document.querySelector("#overlay-link-projects");
+const buttonServices = document.querySelector("#overlay-link-services");
+
+button.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+});
+/* buttonProjects.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+});
+
+buttonServices.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+}); */
 
 
 

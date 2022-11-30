@@ -1,3 +1,24 @@
+//HEADER BURGUER
+const button = document.querySelector("#burger");
+const menu = document.querySelector("#overlay");
+const buttonProjects = document.querySelector("#overlay-link-projects");
+const buttonServices = document.querySelector("#overlay-link-services");
+
+button.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+});
+/* buttonProjects.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+});
+
+buttonServices.addEventListener("click", () => {
+  button.classList.toggle('burger-active');
+  menu.classList.toggle('overlay-active');
+}); */
+
+
 const contSection = document.querySelector('#contact-section');
 const submitBtn = contSection.querySelector('button');
 
