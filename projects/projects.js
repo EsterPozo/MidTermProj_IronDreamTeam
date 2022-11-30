@@ -8,20 +8,9 @@ const buttonProjects = document.querySelector("#overlay-link-projects");
 const buttonServices = document.querySelector("#overlay-link-services");
 
 button.addEventListener("click", () => {
-  button.classList.toggle('burger-active');
-  menu.classList.toggle('overlay-active');
+  button.classList.toggle("burger-active");
+  menu.classList.toggle("overlay-active");
 });
-/* buttonProjects.addEventListener("click", () => {
-  button.classList.toggle('burger-active');
-  menu.classList.toggle('overlay-active');
-});
-
-buttonServices.addEventListener("click", () => {
-  button.classList.toggle('burger-active');
-  menu.classList.toggle('overlay-active');
-}); */
-
-
 
 //Variables de HTML
 const projSection = document.querySelector("#p-proj-section");
@@ -35,39 +24,43 @@ window.onload = function () {
   fetch(url2)
     .then((result) => {
       result.json().then((data) => {
-        //console.log("segundo then")
         console.log(data);
         const params = new URLSearchParams(window.location.search);
 
-const pageNum= params.get("uuid");
-console.log(pageNum);
-        let indexp = 4;
-        if (pageNum !== null) {
-          console.log('entro en diferente a null')
-          indexp = data.findIndex(object => {
-            return object.uuid === pageNum;
-          })
+        const pageNum = params.get("uuid");
+        console.log(pageNum);
+        let indexp;
         
+        if (pageNum !== null) {
+          console.log("entro en diferente a null");
+          indexp = data.findIndex((object) => {
+            return object.uuid === pageNum;
+          });
+          if (indexp === -1 ) {
+            window.location.replace("../error/error.html"); 
+          }
+          
+        } else {
+          window.location.replace("../error/error.html");
         }
-
 
         /* const indexp = data.findIndex(object => {
           return object.uuid === pageNum;
         })  */
         console.log(indexp);
         const pageId = data[indexp].uuid;
-       console.log(pageId);
-      
+        console.log(pageId);
 
         //SECTION 1
         //Title area
-        
+
         const h1 = projSection.querySelector("h1");
         h1.innerHTML = data[indexp].name;
         const p1 = projSection.querySelector("#p-under-h1");
         p1.innerHTML = data[indexp].description;
         const p2 = projSection.querySelector("#p-date");
-        p2.innerHTML = "<span>Completed on: </span>" + data[indexp].completed_on;
+        p2.innerHTML =
+          "<span>Completed on: </span>" + data[indexp].completed_on;
 
         //Middle area
         const image1 = projSection.querySelector("img");
@@ -90,7 +83,7 @@ console.log(pageNum);
         function getOtherProjects(array) {
           array.forEach((element) => {
             const divInd = document.createElement("div");
-            divInd.className = "internalDiv"
+            divInd.className = "internalDiv";
             divForCards.appendChild(divInd);
             const imagecard1 = document.createElement("img");
             imagecard1.className = "p-card-img";
