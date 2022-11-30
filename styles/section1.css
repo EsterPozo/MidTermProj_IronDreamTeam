@@ -127,27 +127,6 @@
     right: 15px;
     top: 370px;  
   }
-  /* .empty-helper::before {
-    content: "";
-    background-image: url("../project-assets/hero-section/card-2.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    background-size: contain;
-    width: 11.8em;
-    height: 13.5em;
-    bottom: -37px;
-    right: 72px;
-  }  */
-  /* .main-img::after{
-    display: block;
-    content: "";
-    background-image: url("../project-assets/hero-section/card-2.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    background-size: contain;
-    width: 11.8em;
-    height: 13.5em;  
-  } */
   .clients-list {
     margin-top: 20%;
     margin-bottom: 10%;
