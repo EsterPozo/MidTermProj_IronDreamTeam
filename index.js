@@ -20,7 +20,7 @@ buttonServices.addEventListener("click", () => {
 const url2 =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
-  const recentSection = document.querySelector('#section-recent')
+  const recentSection = document.querySelector('#section-recent');
 const divForCards = recentSection.querySelector(".external-div");
 
 window.onload = function () {

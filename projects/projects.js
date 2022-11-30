@@ -2,10 +2,7 @@ const url2 =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
 //Coger el parametro uuid del url
-const params = new URLSearchParams(window.location.search);
 
-const pageNum= params.get("uuid");
-console.log(pageNum);
 
 
 //Variables de HTML
@@ -22,18 +19,23 @@ window.onload = function () {
       result.json().then((data) => {
         //console.log("segundo then")
         console.log(data);
-        
-        /* if (!pageNum) {
-          const indexp = data.findIndex(object => {
+        const params = new URLSearchParams(window.location.search);
+
+const pageNum= params.get("uuid");
+console.log(pageNum);
+        let indexp = 4;
+        if (pageNum !== null) {
+          console.log('entro en diferente a null')
+          indexp = data.findIndex(object => {
             return object.uuid === pageNum;
           })
-        } else if (pageNum){
-          const indexp = 4;
-        } */
+        
+        }
 
-        const indexp = data.findIndex(object => {
+
+        /* const indexp = data.findIndex(object => {
           return object.uuid === pageNum;
-        }) 
+        })  */
         console.log(indexp);
         const pageId = data[indexp].uuid;
        console.log(pageId);
