@@ -128,7 +128,7 @@
     height: 13.5em;
     bottom: -37px;
     right: 72px;
-  }
+  } 
   /* .main-img::after{
     display: block;
     content: "";
@@ -141,6 +141,7 @@
   } */
   .clients-list {
     margin-top: 20%;
+    margin-bottom: 10%;
   }
 
 }
