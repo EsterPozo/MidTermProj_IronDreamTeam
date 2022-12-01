@@ -24,11 +24,10 @@ window.onload = function () {
   fetch(url2)
     .then((result) => {
       result.json().then((data) => {
-        console.log(data);
+        
         const params = new URLSearchParams(window.location.search);
 
         const pageNum = params.get("uuid");
-        console.log(pageNum);
         let indexp;
         
         if (pageNum !== null) {
@@ -44,12 +43,7 @@ window.onload = function () {
           window.location.replace("../error/error.html");
         }
 
-        /* const indexp = data.findIndex(object => {
-          return object.uuid === pageNum;
-        })  */
-        console.log(indexp);
         const pageId = data[indexp].uuid;
-        console.log(pageId);
 
         //SECTION 1
         //Title area
@@ -65,8 +59,6 @@ window.onload = function () {
         //Middle area
         const image1 = projSection.querySelector("img");
         image1.src = data[indexp].image;
-        // Eliminar después de CSS:
-        //image1.style.height = "400px";
         const parag = projSection.querySelector("#p-main-p");
         parag.innerHTML = data[indexp].content;
 
@@ -88,8 +80,7 @@ window.onload = function () {
             const imagecard1 = document.createElement("img");
             imagecard1.className = "p-card-img";
             imagecard1.src = element.image;
-            //eliminar después de CSS
-            //imagecard1.style.width = "120px";
+            imagecard1.alt = `element ${element.uuid} image`
             divInd.appendChild(imagecard1);
 
             const h4 = document.createElement("h4");
@@ -115,15 +106,13 @@ window.onload = function () {
             if (a.uuid < b.uuid) return 0.5 - Math.random();
             if (a.uuid > b.uuid) return 0.5 - Math.random();
             if (a.uuid === b.uuid) return 0.5 - Math.random();
-            // return 0.5 - Math.random()
+            
           });
           const dataOnlyThree = dataFiltered.slice(0, 3);
           return dataOnlyThree;
         }
 
-        //CTA SECTION
-
-        //FOOTER
+        
       });
     })
     .catch((err) => console.log("error!"));

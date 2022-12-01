@@ -47,6 +47,7 @@ window.onload = function () {
             const imagecard1 = document.createElement("img");
             imagecard1.className = "p-card-img";
             imagecard1.src = element.image;
+            imagecard1.alt = `image ${element.uuid}`;
             divInd.appendChild(imagecard1);
 
             const h4 = document.createElement("h4");
