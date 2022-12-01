@@ -1,5 +1,5 @@
 .testimonial-sec {
-    position: relative;
+   /*  position: relative; */
 }
 .memoji{
     display: none;
@@ -10,6 +10,7 @@
     border-radius: 50%;
 }
 .testimonial-box {
+    position: relative;
     background-color: #292E47;
     height: 100%;
     display: flex;
@@ -105,20 +106,20 @@
         position: absolute;
     }
     .memoji1{
-        left: 7vw;
-        bottom: 55vh;
+        left: 25px;
+        bottom: 450px;
     }
     .memoji2{
-        right: 7vw;
-        bottom: 55vh;
+        right: 25px;
+        bottom: 450px;
     }
     .memoji3{
-        left: 7vw;
-        top: 50vh;
+        left: 25px;
+        top: 450px;
     }
     .memoji4{
-        right: 7vw;
-        top: 50vh;
+        right: 25px;
+        top: 450px;
     }
 }
 @media screen and (min-width: 1025px){
