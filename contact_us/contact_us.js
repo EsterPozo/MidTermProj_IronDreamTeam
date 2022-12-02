@@ -55,6 +55,6 @@ submitBtn.addEventListener("click", function (e) {
     document.querySelector("input").value.includes("Ironhack") ||
     document.querySelector("input").value.includes("ironhack")
   ) {
-    alert("You cannot be Ironhack");
+    alert("You cannot be Ironhack because I am Ironhack ¬¬");
   }
 });
