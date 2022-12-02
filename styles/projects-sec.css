@@ -142,11 +142,15 @@ height: 240px;
 
 .internalDiv a {
   font-size: 17px;
+  color:#072AC8 ;
 
 text-decoration: none;
 margin-top: 54px;
 margin-bottom: 30px;;
 
+}
+.internalDiv a:hover {
+  color:#43D2FF ;
 }
 
 
